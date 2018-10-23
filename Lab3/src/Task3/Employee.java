@@ -1,7 +1,12 @@
+package Task3;
+
 public class Employee extends Person {
     private int salary;
     private int year;
     private String insuranceNumber;
+    Employee(){
+
+    }
 
     public Employee(String name, String iN, int s, int y){
         super(name);
@@ -9,8 +14,20 @@ public class Employee extends Person {
         this.insuranceNumber = iN;
         this.year = y;
     }
-    public String ToString(){
-        return "Name:" + this.name + " Salary:" + this.salary + "Insurance Number: " + this.insuranceNumber + "Year: " + this.year;
+    public double getSalary(){
+        return salary;
+    }
+    public int getYear(){
+        return year;
+    }
+    public String getInsuranceNumber(){
+        return insuranceNumber;
+    }
+    public String toString(){
+        return "Employee's name:\t" + getName() +"\n"+
+                "Income:   \t" + getSalary()+"\n" +
+                "Year of intrance:\t" + getYear() + "\n" +
+                "Insurance number:\t" + getInsuranceNumber() + "\n";
     }
 
     @Override

@@ -1,3 +1,5 @@
+package Task3;
+
 public abstract class Person {
      String name;
 
@@ -7,7 +9,9 @@ public abstract class Person {
     public void setName(String name1){
         name = name1;
     }
-
+    Person(){
+        name = "no_name";
+    }
     public Person(String name){
 
         this.name=name;

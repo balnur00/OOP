@@ -1,5 +1,5 @@
 public class Array{
-    public static int[] rep(int[] x){
+    public  int[] rep(int[] x){
         int[] y = new int[x.length * 2];
         for(int i = 0;i < y.length; i++){
             y[i] = x[i/2];
@@ -9,7 +9,8 @@ public class Array{
 
     public static void main(String[] args) {
         int[] n = {1,2,3};
-        int[] y = Array.rep(n);
+        Array a = new Array();
+        int[] y = a.rep(n);
         for(int i = 0;i < y.length; i++){
             System.out.print(y[i] + " ");
         }

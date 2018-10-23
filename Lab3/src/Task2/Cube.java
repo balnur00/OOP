@@ -1,3 +1,5 @@
+package Task2;
+
 public abstract class Cube extends Shapes {
     private int a;
     public Cube(String name, int b){

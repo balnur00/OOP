@@ -1,3 +1,7 @@
+package Task1;
+
+import Task1.Animal;
+
 public class Lion extends Animal {
     private String gender;
     private int id;
